@@ -14,12 +14,16 @@ createApp({
   },
   methods: {
     addToDo(){
-        const toDo = {
-            text: this.message,
-            done: false
+        if(this.message === ''){
+            alert(`Devi inserire qualcosa all'interno del campo input`);
+        }else{
+            const toDo = {
+                text: this.message,
+                done: false
+            };
+            this.toDoList.push(toDo);
+            this.message = '';
         }
-        this.toDoList.push(toDo)
-        this.message = ''
     }, 
     toDoDone(index){
         if(this.toDoList[index].done === false){
