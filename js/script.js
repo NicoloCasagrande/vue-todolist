@@ -3,18 +3,33 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-      toDoList: [], 
+      toDoList: [
+        {
+            text: 'ciao', 
+            done: false
+        }
+      ], 
       message: ''
     }
   },
-  methods:{
+  methods: {
     addToDo(){
         const toDo = {
-            text: message,
+            text: this.message,
             done: false
         }
         this.toDoList.push(toDo)
-        message = '';
+        this.message = ''
+    }, 
+    toDoDone(index){
+        if(this.toDoList[index].done === false){
+            this.toDoList[index].done = true;
+        }else{
+            this.toDoList[index].done = false;
+        }
+    }, 
+    removeToDo(index){
+        this.toDoList.splice(index, 1)
     }
   }
 }).mount('#app')
