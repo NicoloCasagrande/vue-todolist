@@ -29,6 +29,9 @@
                         <li v-for="(element, index) in toDoList" :class="element.done === true ? 'to-do-done' : 'null'"><h4 @click="toDoDone(index)">{{element.text}}</h4><div><i @click="removeToDo(index)" class="fa-solid fa-xmark"></i></div></li>
                     </ul>
                 </div>
+                <div>
+                    <p>Istruzioni: Per aggiungere una cosa alla lista basta inserire l'emento nel campo input e cliccare il pulsante di fianco oppure premere il tasto 'Invio'. Per eliminare una voce basta cliccare sulla X di fianco all'emento. Per segnarlo come completato invece sarà sufficiente cliccare sull'elemento della lista.</p>
+                </div>
             </div>
         </main>
       </div>
