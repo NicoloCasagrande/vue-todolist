@@ -4,9 +4,15 @@
     margin: 0;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 header{
     display: flex;
     justify-content: center;
+    padding-top: 3.125rem;
+    padding-bottom: 1.5625rem;
 }
 
 .logo{
@@ -62,8 +68,8 @@ li h4{
 }
 
 ul{
-    background-color: lightgray;
+    background-color: #F5F5F5;
     border-radius: .625rem;
-    margin-top: .625rem;
-    padding: .625rem 1.25rem;
+    margin-top: 3.125rem;
+    padding: .9375rem 1.25rem;
 }
