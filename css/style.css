@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 25rem;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-div{
+    display: flex;
+    justify-content: center;
+}
+
+.input-div input{
+    width: 18.75rem;
+    margin-right: 1.25rem;
+    margin-top: .9375rem;
+    height: 2.5rem;
+    border-radius: .625rem;
+    padding: .3125rem;
+}
+
+.input-div button{
+    margin-top: .9375rem;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    border-radius: .625rem;
+}
+
+.to-do-done{
+    text-decoration: line-through;
+}
